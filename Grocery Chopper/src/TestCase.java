@@ -24,10 +24,10 @@ public class TestCase {
 		deoderant.showItem();
 		*/
 
-		// The following calls the Sort function,
-		// which in turn calls the UserInput function,
-		// resulting in the user being prompted for a value,
-		// then the value entered is categorized.
+		/* The following calls the Sort function,
+		   which in turn calls the UserInput function,
+		   resulting in the user being prompted for a value,
+		   then the value entered is categorized.*/
 		Sort sorted_value = new Sort();
 		sorted_value.sortItem();
 	}

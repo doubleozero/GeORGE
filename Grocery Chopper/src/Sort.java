@@ -1,23 +1,25 @@
+import static java.lang.System.out;
 
 public class Sort {
 
 	public void sortItem() {
-		
+		// This function takes the user's input from UserInput, then sorts it accordingly 
 		String user_item;
 		UserInput item = new UserInput();
 		user_item = item.userPrompt();
 		
-		System.out.println("COM-PUT-ING...");
+		out.println("COM-PUT-ING...");
 		
+		// This is going to be a looooong switch if I stick with this approach...
 		switch(user_item) {
 		case "banana":
-			System.out.println("A banana is a fruit.");
+			out.println("A banana is a fruit.");
 			break;
 		case "lettuce":
-			System.out.println("Lettuce is a vegetable.");
+			out.println("Lettuce is a vegetable.");
 			break;
 		default:
-			System.out.println("You didn't enter anything!");
+			out.println("You didn't enter anything!");
 		}
 
 	}

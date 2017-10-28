@@ -9,11 +9,8 @@ public class UserInput {
 		
 		// Prompt user to enter an item
 		out.print("Enter an item: ");
-		String input = scan.next();
-		scan.close();
-		
-		// Test - remove later
-		out.println("Ah, you want a " + input + ". How quaint.");
+		String input = scan.next();           //can't make this private, suggests final -- research this
+		scan.close();		
 		return input;
 	}
 }
