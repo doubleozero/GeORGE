@@ -1,7 +1,7 @@
 import static java.lang.System.out;
 import java.util.Scanner;
 
-public class UserInput {
+public class UserInput {                        // Constructor 
 	
 	public String userPrompt() {
 		
@@ -9,7 +9,7 @@ public class UserInput {
 		
 		// Prompt user to enter an item
 		out.print("Enter an item: ");
-		String input = scan.next();           //can't make this private, suggests final -- research this
+		String input = scan.next();           //can't make this private (to require accessor methods), suggests final -- research this
 		scan.close();		
 		return input;
 	}

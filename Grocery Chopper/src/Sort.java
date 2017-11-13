@@ -4,8 +4,11 @@ public class Sort {
 
 	public void sortItem() {
 		// This function takes the user's input from UserInput, then sorts it accordingly 
+		
+		// This function does not yet interact with the  Item() class, but will soon.
+		
 		String user_item;
-		UserInput item = new UserInput();
+		UserInput item = new UserInput(); // This constructor uses class UserInput() to create object "item". Constructcor is called by "new" operator.
 		user_item = item.userPrompt();
 		
 		out.println("COM-PUT-ING...");

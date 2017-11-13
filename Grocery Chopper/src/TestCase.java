@@ -7,20 +7,21 @@ public class TestCase {
 		out.println("=============");
 		
 		/* Static values test, remove later
+		 * Note the likes of assignName(), assignCat(), etc. are accessor methods
 		Item banana = new Item();
-		banana.assignName("banana");
-		banana.assignCat("fruit");
-		banana.isEdible(true);
-		banana.isFrozen(false);
-		banana.isParish(true);		
+		banana.setName("banana");
+		banana.setCat("fruit");
+		banana.setEdible(true);
+		banana.setFrozen(false);
+		banana.setParish(true);		
 		banana.showItem();
 		
 		Item deoderant = new Item();
-		deoderant.assignName("deoderant");
-		deoderant.assignCat("hygene product");
-		deoderant.isEdible(false);
-		deoderant.isFrozen(false);
-		deoderant.isParish(false);		
+		deoderant.setName("deoderant");
+		deoderant.setCat("hygene product");
+		deoderant.setEdible(false);
+		deoderant.setFrozen(false);
+		deoderant.setParish(false);		
 		deoderant.showItem();
 		*/
 
@@ -30,5 +31,8 @@ public class TestCase {
 		   then the value entered is categorized.*/
 		Sort sorted_value = new Sort();
 		sorted_value.sortItem();
+		
+		// Now let's test creating a GUI:
+		new UserInterface();               // constructor
 	}
 }

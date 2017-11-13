@@ -1,30 +1,34 @@
 import static java.lang.System.out;
 
 public class Item{
+	
+	// This class is not presently in use yet. 
+	
+	//The following private variables require other classes to use accessor methods
 	private String name;
 	private String category;
 	private Boolean parishable;
 	private Boolean edible;
 	private Boolean frozen;
 	
-	public void assignName(String n){
-		name = n;
+	public void setName(String name){       // public void setName(String n){
+		this.name = name;                   //    name = n;}
 	}
 	
-	public void assignCat(String c){
-		category = c;
+	public void setCat(String category){
+		this.category = category;
 	}
 	
-	public void isParish(Boolean s){
-		parishable = s;
+	public void setParish(Boolean parishable){
+		this.parishable = parishable;
 	}
 	
-	public void isEdible(Boolean e){
-		edible = e;
+	public void setEdible(Boolean edible){
+		this.edible = edible;
 	}
 	
-	public void isFrozen(Boolean f){
-		frozen = f;
+	public void setFrozen(Boolean frozen){
+		this.frozen = frozen;
 	}
 	
 	public void showItem(){
