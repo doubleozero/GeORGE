@@ -1,5 +1,7 @@
-import java.awt.FlowLayout;  // awt = Abstract Windowing Toolkit
+//import java.awt.FlowLayout;  // awt = Abstract Windowing Toolkit
+import java.awt.GridLayout;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JButton;
 //import javax.swing.*;  << may be better to just import all classes from the javax.swing package
 
@@ -8,11 +10,16 @@ public class UserInterface extends JFrame {    // "extends" means I am adding fu
 
 		public UserInterface() {                      // constructor declaration. This will call various methods from the Java API.
 			setTitle("GeORGE");
-			setLayout(new FlowLayout());	//setLayout() puts the new FlowLayout object in charge of arranging components on the frame
+			//setLayout(new FlowLayout());	//setLayout() puts the new FlowLayout object in charge of arranging components on the frame
 											//FlowLayout() positions objects on the frame centered near the top
+			setLayout(new GridLayout(5, 1, 20, 3));
 			setDefaultCloseOperation(EXIT_ON_CLOSE); // Refers to the "X" button
+			add(new JLabel("Welcome to GeORGE Pre-Alpha"));
 			add(new JButton("CLICK TO TEST"));       //Sets the button label. Button does not yet actually do anything. "add" places button on object's surface.
 			setSize(300, 100);             // 300 x 100 pixels (wide x tall)
+			add(new JLabel("This button does absolutely nothing."));
+			add(new JLabel("You may continue clicking as suits your primitive pleasure."));
+			pack();
 			setVisible(true);
 		}
 }
