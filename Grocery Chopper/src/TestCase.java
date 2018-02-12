@@ -33,6 +33,6 @@ public class TestCase {
 		sorted_value.sortItem();
 		
 		// Now let's test creating a GUI:
-		new UserInterface();               // constructor
+		//new UserInterface();               // constructor
 	}
 }
